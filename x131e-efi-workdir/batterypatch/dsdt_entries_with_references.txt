@@ -1,0 +1,17 @@
+SMD0,   100 ! (BFWL) // no idea what this is
+BAIF,   128 ! (BAIO) // apparently some thinkpad-specific thing -- probably not important
+ECRC,   16 (GBST) -- ^PCI0.LPCB.EC.ECRC
+ECAC,   16 (GBST) -- ^PCI0.LPCB.EC.ECAC
+ECVO,   16 (GBST) -- ^PCI0.LPCB.EC.ECVO
+
+SBFC,   16 (GBIF) -- (SBFC + ^PCI0.LPCB.EC.SBFC
+
+SBDC,   16 (GBIF) -- (SBDC + ^PCI0.LPCB.EC.SBDC
+SBDV,   16 (GBIF) -- (SBDV + ^PCI0.LPCB.EC.SBDV
+SBSN,   16 (GBIF) -- (SBSN + ^PCI0.LPCB.EC.SBSN
+
+SBCH,   32 (GBIF) -- (SBCH + ^PCI0.LPCB.EC.SBCH
+
+SBMN,   128 ! (GBIF) -- (SBMN + ^PCI0.LPCB.EC.SBMN
+
+SBDN,   128 ! (GBIF) -- (SBDN + ^PCI0.LPCB.EC.SBDN

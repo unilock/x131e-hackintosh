@@ -1,0 +1,289 @@
+00:000 00:000 OC: OpenCore DBG-063-2020-11-02 is loading in Optional mode (0/0)...
+00:196 00:196 OC: Boot timestamp - 2020.11.14 22:26:07
+00:393 00:196 OCCPU: MP services threads 4 (enabled 4) - Success
+00:633 00:240 OCCPU: MP services Pkg 1 Cores 2 Threads 2 - Success
+00:830 00:196 OCCPU: Found        Intel(R) Core(TM) i3-3227U CPU @ 1.90GHz
+01:028 00:198 OCCPU: Signature 306A9 Stepping 9 Model 3A Family 6 Type 0 ExtModel 3 ExtFamily 0 uCode 21
+01:229 00:200 OCCPU: EIST CFG Lock 1
+01:427 00:197 OCCPU: Ratio Min 8 Max 19 Current 18 Turbo 19 19 19 19
+01:644 00:217 OCCPU: Timer address is 408 from LPC
+01:942 00:297 OCCPU: Detected Apple Processor Type: 09 -> 0904
+04:360 02:418 OCCPU: CPUFrequencyFromTSC  1895691812Hz  1895MHz
+04:558 00:197 OCCPU: CPUFrequency  1895691812Hz  1895MHz
+04:755 00:196 OCCPU: FSBFrequency    99773253Hz    99MHz
+04:978 00:222 OCCPU: Pkg 1 Cores 2 Threads 4
+05:175 00:197 OC: OcLoadNvramSupport...
+05:373 00:198 OC: Not deleting NVRAM 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:UIScale, matches add
+05:570 00:196 OC: Deleting NVRAM 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:DefaultBackgroundColor - Not Found
+05:771 00:200 OC: Not deleting NVRAM 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:rtc-blacklist, matches add
+05:991 00:219 OC: Not deleting NVRAM 7C436110-AB2A-4BBB-A880-FE41995C9F82:boot-args, matches add
+06:189 00:198 OC: Setting NVRAM 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:DefaultBackgroundColor - Success
+06:386 00:197 OC: Setting NVRAM 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:UIScale - ignored, exists
+06:590 00:203 OC: Setting NVRAM 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:rtc-blacklist - Not Found
+06:787 00:196 OC: Setting NVRAM 7C436110-AB2A-4BBB-A880-FE41995C9F82:SystemAudioVolume - ignored, exists
+07:006 00:219 OC: Setting NVRAM 7C436110-AB2A-4BBB-A880-FE41995C9F82:boot-args - ignored, exists
+07:234 00:227 OC: Setting NVRAM 7C436110-AB2A-4BBB-A880-FE41995C9F82:run-efi-updater - ignored, exists
+07:431 00:197 OC: Setting NVRAM 7C436110-AB2A-4BBB-A880-FE41995C9F82:csr-active-config - ignored, exists
+07:629 00:198 OC: Setting NVRAM 7C436110-AB2A-4BBB-A880-FE41995C9F82:prev-lang:kbd - ignored, exists
+07:826 00:196 OC: Current version is DBG-063-2020-11-02
+08:048 00:222 OC: OcMiscMiddleInit...
+08:246 00:198 OC: LoadHandle D7473F98 with BootProtect in Bootstrap mode - Success
+08:443 00:196 OCB: Missing FW NVRAM, going on...
+08:647 00:203 OCB: Have existing option 1, valid 1
+08:844 00:196 OCB: Have existing order of size 22 - Buffer Too Small
+09:061 00:217 OCB: Boot order has first option as the default option
+09:259 00:198 OC: OcLoadUefiSupport...
+09:488 00:228 OCRTC: Wake log is 0x00 0x00   0 0x00
+09:685 00:197 OC: Loading Apple Secure Boot with Default (level 1)
+09:885 00:200 OCII: AIFTimerBoostInit Current timer is 10000
+10:106 00:221 OCII: AmiEfiKeycodeProtocol is unavailable on gST->ConsoleHandle - Unsupported
+10:305 00:198 OCII: gST->ConIn DA07D250 vs found DA07D250
+10:502 00:196 OCABC: RTDFRG 1 DEVMMIO 0 NOSU 0 NOVRWR 0 NOSB 0 NOHBMAP 0 SMSLIDE 1 WRUNPROT 1
+10:698 00:196 OCABC: FEXITBS 0 PRMRG 0 CSLIDE 1 MSLIDE 0 PRSRV 0 RBMAP 0 VMAP 1 APPLOS 0 RTPERMS 0
+10:902 00:203 OCABC: Firmware has 1000550 free pages (876134 in lower 4 GB)
+11:119 00:217 OCABC: Awaiting rendezvous with OpenRuntime r11
+11:316 00:196 OC: RBVR 1 DDBR 1
+11:546 00:229 OC: Got 2 drivers
+11:743 00:197 OC: Driver HfsPlusLegacy.efi at 0 is being loaded...
+11:953 00:209 OCB: Arch filtering 0(22912)->D8175018(22912) caps 4 - Success
+12:170 00:217 OC: Driver HfsPlusLegacy.efi at 0 is successfully loaded!
+12:371 00:200 OC: Driver HfsPlusLegacy.efi at 0 needs connection.
+12:569 00:198 OC: Driver OpenRuntime.efi at 1 is being loaded...
+12:777 00:207 OCB: Arch filtering 0(36868)->D66E7018(36868) caps 4 - Success
+12:975 00:198 OCABC: Got rendezvous with OpenRuntime r11
+13:198 00:222 OCABC: MAT support is 0
+13:394 00:196 OC: Driver OpenRuntime.efi at 1 is successfully loaded!
+13:592 00:197 OC: Connecting drivers...
+15:298 01:705 OC: Connecting drivers done...
+15:495 00:197 OCJS: PartitionInfo is Not Found
+15:713 00:217 OCJS: Got APFS super block for F0AAF377-4BD0-864E-B3AA-09184EA2614D
+15:911 00:198 OCJS: Block (P:1|F:0) read req 65B8EC -> 32DC760 of 1000 (mask 0, mul 8) - Success
+16:114 00:203 OCAV: Real image size: 628216
+16:324 00:209 OCAV: Signature verified!
+16:520 00:196 OCJS: APFS driver 1412081001000000/20200109 found for F0AAF377-4BD0-864E-B3AA-09184EA2614D, required >= 748077008000000/20180621, allow
+16:743 00:223 OCJS: Connecting normally APFS driver on handle D7E1BC18
+17:049 00:305 OCC: GOP exists on ConsoleOutHandle and has 4 modes
+17:245 00:196 OC: Requested resolution is 0x0@0 (max: 1, force: 0) from Max
+17:442 00:196 OCC: Requesting 0x0@0 (max: 1) resolution, curr 0, total 4
+17:670 00:227 OCC: Mode 0 - 1366x768:1
+17:888 00:217 OCC: Mode 1 - 640x480:1
+18:086 00:197 OCC: Mode 2 - 800x600:1
+18:286 00:200 OCC: Mode 3 - 1024x768:1
+18:483 00:196 OCC: Current mode matches desired mode 0
+18:681 00:197 OC: Changed resolution to 0x0@0 (max: 1, force: 0) from Max - Already started
+18:899 00:217 OCC: Using builtin text renderer with 1 scale
+19:125 00:226 OCC: Install console control (D9E71938/0/0), current - Success
+19:323 00:197 OCC: Setup ASCII Output - Success
+19:520 00:196 OC: Requested console mode is 0x0 (max: 0) from 
+19:747 00:227 OC: Requested not to use audio
+19:965 00:218 OC: OcLoadAcpiSupport...
+20:162 00:196 OCA: Found 16 ACPI tables
+20:360 00:197 OCA: Detected table 50434146 (20202038472D5054) at DCFEB000 of 268 bytes at index 0
+20:561 00:200 OCA: Detected table 43494C53 (20202038472D5054) at DCFFD000 of 374 bytes at index 1
+20:757 00:196 OCA: Detected table 41504354 (00004F564F4E454C) at DCFFC000 of 50 bytes at index 2
+20:976 00:218 OCA: Detected table 21465341 (20202038472D5054) at DCFEC000 of 165 bytes at index 3
+21:173 00:196 OCA: Detected table 54455048 (20202038472D5054) at DCFE9000 of 56 bytes at index 4
+21:377 00:203 OCA: Detected table 43495041 (20202038472D5054) at DCFE8000 of 152 bytes at index 5
+21:574 00:196 OCA: Detected table 4746434D (20202038472D5054) at DCFE7000 of 60 bytes at index 6
+21:771 00:196 OCA: Detected table 54445046 (20202038472D5054) at DCFE6000 of 100 bytes at index 7
+22:010 00:239 OCA: Detected table 54445353 (0074734930757043) at DCFE5000 of 2316 bytes at index 8
+22:206 00:196 OCA: Detected table 54445353 (0000006D50757043) at DCFE4000 of 2686 bytes at index 9
+22:403 00:196 OCA: Detected table 49464555 (20202038472D5054) at DCFE3000 of 62 bytes at index 10
+22:601 00:197 OCA: Detected table 49464555 (00004655424D4F43) at DCFE2000 of 66 bytes at index 11
+22:797 00:196 OCA: Detected table 4D44534D (20202038472D5054) at DCFE1000 of 85 bytes at index 12
+23:011 00:214 OCA: Detected table 49464555 (20202038472D5054) at DCFE0000 of 678 bytes at index 13
+23:208 00:196 OCA: Detected table 32474244 (20202038472D5054) at DCFDF000 of 107 bytes at index 14
+23:406 00:197 OCA: Detected table 54524742 (20202038472D5054) at DCFDE000 of 56 bytes at index 15
+23:604 00:198 OCA: Applying 5 byte ACPI patch skip 0, count 0
+23:801 00:196 OCA: Patching DSDT of 61284 bytes with 0000000000000000 ID replaced 1 of 0
+24:014 00:212 OCA: Refreshed DSDT checksum to C9
+24:239 00:224 OCA: Patching 50434146 (20202038472D5054, 268) with 20202038472D5054 ID at 0 replaced 0 of 0
+24:435 00:196 OCA: Patching 43494C53 (20202038472D5054, 374) with 20202038472D5054 ID at 1 replaced 0 of 0
+24:633 00:198 OCA: Patching 41504354 (00004F564F4E454C, 50) with 00004F564F4E454C ID at 2 replaced 0 of 0
+24:829 00:196 OCA: Patching 21465341 (20202038472D5054, 165) with 20202038472D5054 ID at 3 replaced 0 of 0
+25:042 00:212 OCA: Patching 54455048 (20202038472D5054, 56) with 20202038472D5054 ID at 4 replaced 0 of 0
+25:240 00:198 OCA: Patching 43495041 (20202038472D5054, 152) with 20202038472D5054 ID at 5 replaced 0 of 0
+25:437 00:196 OCA: Patching 4746434D (20202038472D5054, 60) with 20202038472D5054 ID at 6 replaced 0 of 0
+25:634 00:197 OCA: Patching 54445046 (20202038472D5054, 100) with 20202038472D5054 ID at 7 replaced 0 of 0
+25:832 00:198 OCA: Patching 54445353 (0074734930757043, 2316) with 0074734930757043 ID at 8 replaced 0 of 0
+26:045 00:212 OCA: Patching 54445353 (0000006D50757043, 2686) with 0000006D50757043 ID at 9 replaced 0 of 0
+26:270 00:224 OCA: Patching 49464555 (20202038472D5054, 62) with 20202038472D5054 ID at 10 replaced 0 of 0
+26:467 00:197 OCA: Patching 49464555 (00004655424D4F43, 66) with 00004655424D4F43 ID at 11 replaced 0 of 0
+26:664 00:196 OCA: Patching 4D44534D (20202038472D5054, 85) with 20202038472D5054 ID at 12 replaced 0 of 0
+26:862 00:198 OCA: Patching 49464555 (20202038472D5054, 678) with 20202038472D5054 ID at 13 replaced 0 of 0
+27:075 00:212 OCA: Patching 32474244 (20202038472D5054, 107) with 20202038472D5054 ID at 14 replaced 0 of 0
+27:271 00:196 OCA: Patching 54524742 (20202038472D5054, 56) with 20202038472D5054 ID at 15 replaced 0 of 0
+27:469 00:198 OCA: Applying 5 byte ACPI patch skip 0, count 0
+27:666 00:196 OCA: Patching DSDT of 61284 bytes with 0000000000000000 ID replaced 1 of 0
+27:865 00:199 OCA: Refreshed DSDT checksum to CA
+28:062 00:196 OCA: Patching 50434146 (20202038472D5054, 268) with 20202038472D5054 ID at 0 replaced 0 of 0
+28:275 00:212 OCA: Patching 43494C53 (20202038472D5054, 374) with 20202038472D5054 ID at 1 replaced 0 of 0
+28:500 00:224 OCA: Patching 41504354 (00004F564F4E454C, 50) with 00004F564F4E454C ID at 2 replaced 0 of 0
+28:696 00:196 OCA: Patching 21465341 (20202038472D5054, 165) with 20202038472D5054 ID at 3 replaced 0 of 0
+28:893 00:196 OCA: Patching 54455048 (20202038472D5054, 56) with 20202038472D5054 ID at 4 replaced 0 of 0
+29:107 00:214 OCA: Patching 43495041 (20202038472D5054, 152) with 20202038472D5054 ID at 5 replaced 0 of 0
+29:304 00:196 OCA: Patching 4746434D (20202038472D5054, 60) with 20202038472D5054 ID at 6 replaced 0 of 0
+29:502 00:198 OCA: Patching 54445046 (20202038472D5054, 100) with 20202038472D5054 ID at 7 replaced 0 of 0
+29:699 00:196 OCA: Patching 54445353 (0074734930757043, 2316) with 0074734930757043 ID at 8 replaced 0 of 0
+29:896 00:197 OCA: Patching 54445353 (0000006D50757043, 2686) with 0000006D50757043 ID at 9 replaced 0 of 0
+30:095 00:198 OCA: Patching 49464555 (20202038472D5054, 62) with 20202038472D5054 ID at 10 replaced 0 of 0
+30:308 00:213 OCA: Patching 49464555 (00004655424D4F43, 66) with 00004655424D4F43 ID at 11 replaced 0 of 0
+30:505 00:196 OCA: Patching 4D44534D (20202038472D5054, 85) with 20202038472D5054 ID at 12 replaced 0 of 0
+30:729 00:224 OCA: Patching 49464555 (20202038472D5054, 678) with 20202038472D5054 ID at 13 replaced 0 of 0
+30:926 00:196 OCA: Patching 32474244 (20202038472D5054, 107) with 20202038472D5054 ID at 14 replaced 0 of 0
+31:124 00:197 OCA: Patching 54524742 (20202038472D5054, 56) with 20202038472D5054 ID at 15 replaced 0 of 0
+31:337 00:212 OCA: Applying 5 byte ACPI patch skip 0, count 0
+31:534 00:196 OCA: Patching DSDT of 61284 bytes with 0000000000000000 ID replaced 1 of 0
+31:732 00:198 OCA: Refreshed DSDT checksum to CB
+31:928 00:196 OCA: Patching 50434146 (20202038472D5054, 268) with 20202038472D5054 ID at 0 replaced 0 of 0
+32:126 00:197 OCA: Patching 43494C53 (20202038472D5054, 374) with 20202038472D5054 ID at 1 replaced 0 of 0
+32:340 00:214 OCA: Patching 41504354 (00004F564F4E454C, 50) with 00004F564F4E454C ID at 2 replaced 0 of 0
+32:537 00:196 OCA: Patching 21465341 (20202038472D5054, 165) with 20202038472D5054 ID at 3 replaced 0 of 0
+32:762 00:224 OCA: Patching 54455048 (20202038472D5054, 56) with 20202038472D5054 ID at 4 replaced 0 of 0
+32:959 00:197 OCA: Patching 43495041 (20202038472D5054, 152) with 20202038472D5054 ID at 5 replaced 0 of 0
+33:156 00:196 OCA: Patching 4746434D (20202038472D5054, 60) with 20202038472D5054 ID at 6 replaced 0 of 0
+33:370 00:214 OCA: Patching 54445046 (20202038472D5054, 100) with 20202038472D5054 ID at 7 replaced 0 of 0
+33:566 00:196 OCA: Patching 54445353 (0074734930757043, 2316) with 0074734930757043 ID at 8 replaced 0 of 0
+33:763 00:196 OCA: Patching 54445353 (0000006D50757043, 2686) with 0000006D50757043 ID at 9 replaced 0 of 0
+33:961 00:197 OCA: Patching 49464555 (20202038472D5054, 62) with 20202038472D5054 ID at 10 replaced 0 of 0
+34:157 00:196 OCA: Patching 49464555 (00004655424D4F43, 66) with 00004655424D4F43 ID at 11 replaced 0 of 0
+34:372 00:215 OCA: Patching 4D44534D (20202038472D5054, 85) with 20202038472D5054 ID at 12 replaced 0 of 0
+34:569 00:196 OCA: Patching 49464555 (20202038472D5054, 678) with 20202038472D5054 ID at 13 replaced 0 of 0
+34:766 00:196 OCA: Patching 32474244 (20202038472D5054, 107) with 20202038472D5054 ID at 14 replaced 0 of 0
+34:990 00:223 OCA: Patching 54524742 (20202038472D5054, 56) with 20202038472D5054 ID at 15 replaced 0 of 0
+35:186 00:196 OCA: Deleting table 54445353 (0000006D50757043) of 2686 bytes with 0000006D50757043 ID at index 9
+35:400 00:213 OCA: Deleting table 54445353 (0074734930757043) of 2316 bytes with 0074734930757043 ID at index 8
+35:603 00:203 OCA: Inserted table 54445353 (0000434574647353) of 125 bytes into ACPI at index 14
+35:800 00:196 OCA: Inserted table 54445353 (0000000054455048) of 124 bytes into ACPI at index 15
+35:998 00:197 OCA: Inserted table 54445353 (00000000464C4E50) of 1128 bytes into ACPI at index 16
+36:194 00:196 OCA: FACS signature is 0 (0)
+36:408 00:214 OCA: Exposing XSDT table 50434146 (20202038472D5054) at DCFEB000 of 268 bytes at index 0
+36:606 00:198 OCA: Exposing XSDT table 43494C53 (20202038472D5054) at DCFFD000 of 374 bytes at index 1
+36:803 00:196 OCA: Exposing XSDT table 41504354 (00004F564F4E454C) at DCFFC000 of 50 bytes at index 2
+37:000 00:196 OCA: Exposing XSDT table 21465341 (20202038472D5054) at DCFEC000 of 165 bytes at index 3
+37:223 00:223 OCA: Exposing XSDT table 54455048 (20202038472D5054) at DCFE9000 of 56 bytes at index 4
+37:437 00:213 OCA: Exposing XSDT table 43495041 (20202038472D5054) at DCFE8000 of 152 bytes at index 5
+37:635 00:198 OCA: Exposing XSDT table 4746434D (20202038472D5054) at DCFE7000 of 60 bytes at index 6
+37:831 00:196 OCA: Exposing XSDT table 54445046 (20202038472D5054) at DCFE6000 of 100 bytes at index 7
+38:028 00:197 OCA: Exposing XSDT table 49464555 (20202038472D5054) at DCFE3000 of 62 bytes at index 8
+38:226 00:198 OCA: Exposing XSDT table 49464555 (00004655424D4F43) at DCFE2000 of 66 bytes at index 9
+38:439 00:213 OCA: Exposing XSDT table 4D44534D (20202038472D5054) at DCFE1000 of 85 bytes at index 10
+38:638 00:198 OCA: Exposing XSDT table 49464555 (20202038472D5054) at DCFE0000 of 678 bytes at index 11
+38:835 00:196 OCA: Exposing XSDT table 32474244 (20202038472D5054) at DCFDF000 of 107 bytes at index 12
+39:032 00:196 OCA: Exposing XSDT table 54524742 (20202038472D5054) at DCFDE000 of 56 bytes at index 13
+39:255 00:223 OCA: Exposing XSDT table 54445353 (0000434574647353) at DCF0B000 of 125 bytes at index 14
+39:468 00:213 OCA: Exposing XSDT table 54445353 (0000000054455048) at DCF0A000 of 124 bytes at index 15
+39:665 00:197 OCA: Exposing XSDT table 54445353 (00000000464C4E50) at DCF09000 of 1128 bytes at index 16
+39:864 00:198 OCA: Exposing RSDT table 50434146 (20202038472D5054) at DCFEB000 of 268 bytes at index 0
+40:060 00:196 OCA: Exposing RSDT table 43494C53 (20202038472D5054) at DCFFD000 of 374 bytes at index 1
+40:258 00:198 OCA: Exposing RSDT table 41504354 (00004F564F4E454C) at DCFFC000 of 50 bytes at index 2
+40:471 00:212 OCA: Exposing RSDT table 21465341 (20202038472D5054) at DCFEC000 of 165 bytes at index 3
+40:668 00:196 OCA: Exposing RSDT table 54455048 (20202038472D5054) at DCFE9000 of 56 bytes at index 4
+40:867 00:199 OCA: Exposing RSDT table 43495041 (20202038472D5054) at DCFE8000 of 152 bytes at index 5
+41:064 00:196 OCA: Exposing RSDT table 4746434D (20202038472D5054) at DCFE7000 of 60 bytes at index 6
+41:261 00:196 OCA: Exposing RSDT table 54445046 (20202038472D5054) at DCFE6000 of 100 bytes at index 7
+41:501 00:239 OCA: Exposing RSDT table 49464555 (20202038472D5054) at DCFE3000 of 62 bytes at index 8
+41:697 00:196 OCA: Exposing RSDT table 49464555 (00004655424D4F43) at DCFE2000 of 66 bytes at index 9
+41:895 00:197 OCA: Exposing RSDT table 4D44534D (20202038472D5054) at DCFE1000 of 85 bytes at index 10
+42:092 00:197 OCA: Exposing RSDT table 49464555 (20202038472D5054) at DCFE0000 of 678 bytes at index 11
+42:288 00:196 OCA: Exposing RSDT table 32474244 (20202038472D5054) at DCFDF000 of 107 bytes at index 12
+42:503 00:214 OCA: Exposing RSDT table 54524742 (20202038472D5054) at DCFDE000 of 56 bytes at index 13
+42:699 00:196 OCA: Exposing RSDT table 54445353 (0000434574647353) at DCF0B000 of 125 bytes at index 14
+42:897 00:197 OCA: Exposing RSDT table 54445353 (0000000054455048) at DCF0A000 of 124 bytes at index 15
+43:095 00:197 OCA: Exposing RSDT table 54445353 (00000000464C4E50) at DCF09000 of 1128 bytes at index 16
+43:291 00:196 OC: OcLoadPlatformSupport...
+43:505 00:214 OCDH: Setting DataHub 64517CC8-6561-4051-B03C-5964B60F4C7A:name (9) - Success
+43:728 00:222 OCDH: Setting DataHub 64517CC8-6561-4051-B03C-5964B60F4C7A:Model (28) - Success
+43:925 00:196 OCDH: Setting DataHub 64517CC8-6561-4051-B03C-5964B60F4C7A:SystemSerialNumber (26) - Success
+44:123 00:198 OCDH: Setting DataHub 64517CC8-6561-4051-B03C-5964B60F4C7A:system-id (16) - Success
+44:320 00:196 OCDH: Setting DataHub 64517CC8-6561-4051-B03C-5964B60F4C7A:board-id (21) - Success
+44:532 00:212 OCDH: Setting DataHub 64517CC8-6561-4051-B03C-5964B60F4C7A:StartupPowerEvents (8) - Success
+44:730 00:198 OCDH: Setting DataHub 64517CC8-6561-4051-B03C-5964B60F4C7A:InitialTSC (8) - Success
+44:926 00:195 OCDH: Setting DataHub 64517CC8-6561-4051-B03C-5964B60F4C7A:FSBFrequency (8) - Success
+45:125 00:198 OCDH: Setting DataHub 64517CC8-6561-4051-B03C-5964B60F4C7A:DevicePathsSupported (4) - Success
+45:321 00:196 OCDH: Setting DataHub 64517CC8-6561-4051-B03C-5964B60F4C7A:REV (6) - Success
+45:535 00:213 OCDH: Setting DataHub 64517CC8-6561-4051-B03C-5964B60F4C7A:RBr (8) - Success
+45:759 00:224 OCDH: Setting DataHub 64517CC8-6561-4051-B03C-5964B60F4C7A:RPlt (8) - Success
+45:956 00:196 OCSMB: SmbiosLookupHost failed to lookup SMBIOSv3 - Not Found
+46:152 00:196 OCSMB: Found DMI Anchor DCE3A000 v2.7 Table Address DCE39000 Length 079B
+46:349 00:196 OC: Current SMBIOS: LENOVO model 336799U
+46:561 00:212 OC: New SMBIOS: Acidanthera model MacBookAir5,1
+46:759 00:197 OCSMB: Number of CPU cache entries is 4
+46:956 00:196 OCSMB: Applying 1651 (1) prev DCE3A000 (1947/31), 0 (0/0)
+47:153 00:196 OCSMB: Patched DCE37000 v3.2 Table Address DCE38000 Length 0673 1E 60
+47:351 00:198 OC: Setting HW_BID Mac-66F35F19FE2A0D05 - Success
+47:564 00:213 OC: Setting HW_ROM 11:22:33:44:55:66 - Success
+47:761 00:197 OC: Setting ROM 11:22:33:44:55:66 - Success
+47:986 00:224 OC: Setting HW_MLB C02241501CDDYKFCB - Success
+48:183 00:197 OC: Setting MLB C02241501CDDYKFCB - Success
+48:382 00:198 OC: Setting system-id E5B79BB5-CFAD-479C-B17B-7A8E7206DB00 - Success
+48:595 00:213 OC: Setting FirmwareFeatures E00DE137 - Success
+48:792 00:196 OC: Setting ExtendedFirmwareFeatures 00000000E00DE137 - Success
+48:990 00:197 OC: Setting FirmwareFeaturesMask FF1FFF3F - Success
+49:186 00:196 OC: Setting ExtendedFirmwareFeaturesMask 00000000FF1FFF3F - Success
+49:384 00:197 OC: OcLoadDevPropsSupport...
+49:598 00:214 OC: Setting devprop PciRoot(0x0)/Pci(0x2,0x0):AAPL,ig-platform-id - Success
+49:795 00:196 OC: OcMiscLateInit...
+49:993 00:198 OC: Translated HibernateMode None to 0
+50:217 00:223 OC: Hibernation detection status is Not Found
+50:413 00:196 OC: Panic log does not exist
+50:628 00:214 OC: OcLoadKernelSupport...
+50:824 00:196 OC: All green, starting boot management...
+51:021 00:197 OC: Ready for takeoff in 0 us
+51:220 00:198 OCB: Adding fs D7473F98 (E:1|L:1|P:Success) - PciRoot(0x0)/Pci(0x1D,0x0)/USB(0x0,0x0)/USB(0x0,0x0)/HD(1,GPT,3DC57002-FB44-400F-AC0F-A486B42E4757,0x28,0x64000)
+51:416 00:196 OCB: Adding fs D7E1BE98 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1F,0x2)/Sata(0x0,0x0,0x0)/HD(1,GPT,00D471C9-7FF0-4EA2-AF1E-43FB8C06B5A5,0x28,0x64000)
+51:632 00:215 OCB: Adding fs D7473C18 (E:1|L:0|P:Success) - PciRoot(0x0)/Pci(0x1D,0x0)/USB(0x0,0x0)/USB(0x0,0x0)/HD(2,GPT,2AC4870E-7A42-4944-BF55-8269A9684E01,0x64028,0x1D13FB0)
+51:828 00:196 OCB: Found 3 potentially bootable filesystems
+52:025 00:196 OCB: BootOrder/BootNext are not present or unsupported
+52:249 00:223 OCB: Processing blessed list
+52:446 00:196 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1D,0x0)/USB(0x0,0x0)/USB(0x0,0x0)/HD(1,GPT,3DC57002-FB44-400F-AC0F-A486B42E4757,0x28,0x64000)
+52:659 00:213 OCBP: Blessed file is missing
+52:857 00:197 OCBP: Blessed folder is missing
+53:053 00:196 OCBP: Predefined <nil> \System\Library\CoreServices\boot.efi is missing - Not Found
+53:251 00:198 OCBP: Predefined <nil> \EFI\Microsoft\Boot\bootmgfw.efi is missing - Not Found
+53:448 00:196 OCBP: Predefined <nil> \EFI\BOOT\BOOTX64.EFI was found
+53:661 00:213 OCB: Adding entry type (T:1|F:0|G:1) - PciRoot(0x0)/Pci(0x1D,0x0)/USB(0x0,0x0)/USB(0x0,0x0)/HD(1,GPT,3DC57002-FB44-400F-AC0F-A486B42E4757,0x28,0x64000)/\EFI\BOOT\BOOTX64.EFI
+53:866 00:204 OCB: Discarding discovered OpenCore bootloader
+54:063 00:197 OCBP: APFS recovery volume handle missing - \EFI\BOOT\
+54:260 00:197 OCB: APFS recovery is not present - Not Found
+54:485 00:224 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1F,0x2)/Sata(0x0,0x0,0x0)/HD(1,GPT,00D471C9-7FF0-4EA2-AF1E-43FB8C06B5A5,0x28,0x64000)
+54:698 00:212 OCBP: Blessed file is missing
+54:896 00:198 OCBP: Blessed folder is missing
+55:093 00:196 OCBP: Predefined <nil> \System\Library\CoreServices\boot.efi is missing - Not Found
+55:289 00:196 OCBP: Predefined <nil> \EFI\Microsoft\Boot\bootmgfw.efi is missing - Not Found
+55:487 00:197 OCBP: Predefined <nil> \EFI\BOOT\BOOTX64.EFI is missing - Not Found
+55:701 00:213 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1D,0x0)/USB(0x0,0x0)/USB(0x0,0x0)/HD(2,GPT,2AC4870E-7A42-4944-BF55-8269A9684E01,0x64028,0x1D13FB0)
+55:903 00:202 OCBP: BlessedFileHEX (1/3 156) - 02 01 0C 00 D0 41 03 0A 00 00 00 00 01 01 06 00 00 1D 03 05 06 00 00 00 03 05 06 00 00 00 04 01 2A 00 02 00 00 00 28 40 06 00 00 00 00 00 B0 3F D1 01 00 00 00 00 0E 87 C4 2A 42 7A 44 49 BF 55
+56:100 00:197 OCBP: BlessedFileHEX (2/3 156) - 82 69 A9 68 4E 01 02 02 04 04 50 00 5C 00 53 00 79 00 73 00 74 00 65 00 6D 00 5C 00 4C 00 69 00 62 00 72 00 61 00 72 00 79 00 5C 00 43 00 6F 00 72 00 65 00 53 00 65 00 72 00 76 00 69 00 63 00
+56:297 00:196 OCBP: BlessedFileHEX (3/3 156) - 65 00 73 00 5C 00 62 00 6F 00 6F 00 74 00 2E 00 65 00 66 00 69 00 00 00 7F FF 04 00
+56:495 00:197 OCBP: BlessedFileDP - PciRoot(0x0)/Pci(0x1D,0x0)/USB(0x0,0x0)/USB(0x0,0x0)/HD(2,GPT,2AC4870E-7A42-4944-BF55-8269A9684E01,0x64028,0x1D13FB0)/\System\Library\CoreServices\boot.efi
+56:734 00:239 OCBP: Blessed file is valid
+56:931 00:196 OCB: Adding entry type (T:2|F:0|G:0) - PciRoot(0x0)/Pci(0x1D,0x0)/USB(0x0,0x0)/USB(0x0,0x0)/HD(2,GPT,2AC4870E-7A42-4944-BF55-8269A9684E01,0x64028,0x1D13FB0)/\System\Library\CoreServices\boot.efi
+57:129 00:197 OCB: Trying to get label from \System\Library\CoreServices\.contentDetails
+57:325 00:196 OCB: Trying to get label from \System\Library\CoreServices\.disk_label.contentDetails
+57:523 00:197 OCB: Registering entry Install macOS Big Sur (T:2|F:0|G:0|E:1) - PciRoot(0x0)/Pci(0x1D,0x0)/USB(0x0,0x0)/USB(0x0,0x0)/HD(2,GPT,2AC4870E-7A42-4944-BF55-8269A9684E01,0x64028,0x1D13FB0)/\System\Library\CoreServices\boot.efi
+57:736 00:213 OCBP: APFS recovery volume handle missing - \System\Library\CoreServices\
+57:933 00:196 OCB: APFS recovery is not present - Not Found
+58:132 00:199 OCB: Adding fs 2007C5F5 for 1 custom entries and nvram reset (aux shown)
+58:329 00:196 OCB: Adding custom entry OpenShell.efi (tool) -> OpenShell.efi
+58:525 00:196 OCB: Registering entry OpenShell.efi (T:128|F:0|G:0|E:0) - <nil>
+58:766 00:240 OCB: Adding system entry Reset NVRAM
+58:963 00:197 OCB: Registering entry Reset NVRAM (T:256|F:0|G:0|E:0) - <nil>
+59:162 00:198 OCB: Showing menu... 
+61:640 02:478 OCB: Should boot from 3. Reset NVRAM (T:256|F:0|G:0|E:0|DEF:0)
+61:837 00:197 OCB: NVRAM cleanup...
+62:052 00:214 OCB: Found FW NVRAM, full access 0
+62:249 00:197 OCB: Found 8BE4DF61-93CA-11D2-AA0D-00E098032B8C:Boot9696 for preservation of 166 bytes
+62:449 00:199 Deleting 77FA9ABD-0359-4D32-BD60-28F4E78F784B:CurrentActivePolicy... OK
+62:651 00:202 Deleting 77FA9ABD-0359-4D32-BD60-28F4E78F784B:BootDebugPolicyApplied... OK
+62:851 00:199 Deleting 77FA9ABD-0359-4D32-BD60-28F4E78F784B:WindowsBootChainSvn... OK
+63:068 00:217 Deleting 77FA9ABD-0359-4D32-BD60-28F4E78F784B:BootingDeviceTypeInfo... OK
+63:294 00:226 Deleting 77FA9ABD-0359-4D32-BD60-28F4E78F784B:Kernel_SiStatus... OK
+63:494 00:199 Deleting 77FA9ABD-0359-4D32-BD60-28F4E78F784B:Kernel_RvkSiStatus... OK
+63:696 00:201 Deleting 77FA9ABD-0359-4D32-BD60-28F4E78F784B:Kernel_SkuSiStatus... OK
+63:895 00:199 Deleting 77FA9ABD-0359-4D32-BD60-28F4E78F784B:Kernel_WinSiStatus... OK
+64:111 00:215 Deleting 77FA9ABD-0359-4D32-BD60-28F4E78F784B:Kernel_ATPSiStatus... OK
+64:312 00:200 Deleting 77FA9ABD-0359-4D32-BD60-28F4E78F784B:Kernel_EntRevokeSiStatus... OK
+64:515 00:202 Deleting 8BE4DF61-93CA-11D2-AA0D-00E098032B8C:BootMenu... FAIL - Write Protected
+64:714 00:198 OCB: Restored Boot9696 - Success
+64:910 00:196 OCB: Restoring FW NVRAM...

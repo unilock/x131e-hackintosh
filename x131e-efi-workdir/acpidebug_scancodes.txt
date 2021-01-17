@@ -1,0 +1,9 @@
+Fn	| Scancode	| Function
+---------------------------
+F3	| _Q6A		| Mic Toggle
+F4	| _Q13		| Sleep (works natively?)
+F5	| _Q64		| Wireless connectivity toggle
+F6	| _Q65		| Camera / headset toggle?
+F7	| _Q16		| Projector mode
+F8	| _Q17		| Brightness down
+F9	| _Q18		| Brightness up

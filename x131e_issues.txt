@@ -1,0 +1,8 @@
+[FIXED by /u/Ragip_mehmet] - battery status not working (needs hotpatches)
+[FIXED via battery hotpatches (most of the time -- seems to break only sometimes after sleep?)] - trackpoint+buttons only work sometimes (usually do not)
+[FIXED by disabling "PalmNoAction When Typing" in SSDT-Thinkpad_Clickpad] - key presses disable touchpad for a few moments (accidental click protection) -- how to disable?
+[FIXED by swapping BCM94360HMB with Fenvi 94360NG in a M.2 to miniPCIe adapter] - bluetooth doesn't work
+
+- sleep is broken when using USBPorts.kext with Bluetooth mapped correctly
+- if typing too soon after wake, keyboard starts spamming input, causing a softlock
+- some Fn keys don't work; check out ThinkpadAssistant

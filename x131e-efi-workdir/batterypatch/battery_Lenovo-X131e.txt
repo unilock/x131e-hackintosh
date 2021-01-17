@@ -1,0 +1,98 @@
+#Maintained by: unilock for: Laptop Patches
+#battery_Lenovo-X131e.txt
+
+# Created for T430u by firdauzm, 2014-06-18
+# Modified for X131e by unilock, 2020-11-15
+# Some fixes by Rehabman
+
+# Works for:
+#   Lenovo ThinkPad X131e
+
+
+# "Fix Mutex with non-zero SyncLevel"
+into_all all code_regex Mutex\s+\(([^,]*),\s+[^)]*\) replaceall_matched begin Mutex(%1, 0x00) end;
+
+
+into method label B1B2 remove_entry;
+into definitionblock code_regex . insert
+begin
+Method (B1B2, 2, NotSerialized) { Return(Or(Arg0, ShiftLeft(Arg1, 8))) }\n
+end;
+
+into method label B1B4 remove_entry;
+into definitionblock code_regex . insert
+begin
+Method (B1B4, 4, NotSerialized)\n
+{\n
+    Store(Arg3, Local0)\n
+    Or(Arg2, ShiftLeft(Local0, 8), Local0)\n
+    Or(Arg1, ShiftLeft(Local0, 8), Local0)\n
+    Or(Arg0, ShiftLeft(Local0, 8), Local0)\n
+    Return(Local0)\n
+}\n
+end;
+
+into method label RE1B parent_label EC remove_entry;
+into device label EC insert
+begin
+Method (RE1B, 1, NotSerialized)\n
+{\n
+    OperationRegion(ERAM, EmbeddedControl, Arg0, 1)\n
+    Field(ERAM, ByteAcc, NoLock, Preserve) { BYTE, 8 }\n
+    Return(BYTE)\n
+}\n
+end;
+
+into method label RECB parent_label EC remove_entry;
+into device label EC insert
+begin
+Method (RECB, 2, Serialized)\n
+{\n
+    ShiftRight(Arg1, 3, Arg1)\n
+    Name(TEMP, Buffer(Arg1) { })\n
+    Add(Arg0, Arg1, Arg1)\n
+    Store(0, Local0)\n
+    While (LLess(Arg0, Arg1))\n
+    {\n
+        Store(RE1B(Arg0), Index(TEMP, Local0))\n
+        Increment(Arg0)\n
+        Increment(Local0)\n
+    }\n
+    Return(TEMP)\n
+}\n
+end;
+
+
+# Change EC register declarations bigger than 8-bit
+into device label EC code_regex ECRC,\s+16 replace_matched begin RC00,8,RC01,8 end;
+into device label EC code_regex ECAC,\s+16 replace_matched begin AC00,8,AC01,8 end;
+into device label EC code_regex ECVO,\s+16 replace_matched begin VO00,8,VO01,8 end;
+
+into device label EC code_regex SBFC,\s+16 replace_matched begin FC00,8,FC01,8 end;
+
+into device label EC code_regex SBDC,\s+16 replace_matched begin DC00,8,DC01,8 end;
+into device label EC code_regex SBDV,\s+16 replace_matched begin DV00,8,DV01,8 end;
+into device label EC code_regex SBSN,\s+16 replace_matched begin SN00,8,SN01,8 end;
+
+into device label EC code_regex SBCH,\s+32 replace_matched begin CH00,8,CH01,8,CH02,8,CH03,8 end;
+
+into device label EC code_regex (SBMN,)\s+(128) replace_matched begin BMNX,%2 //%1%2 end;
+
+into device label EC code_regex (SBDN,)\s+(128) replace_matched begin BDNX,%2 //%1%2 end;
+
+
+# Put bigger than 8-bit variables together
+into_all method label GBST code_regex \^PCI0\.LPCB\.EC\.ECRC replaceall_matched begin B1B2(^PCI0.LPCB.EC.RC00,^PCI0.LPCB.EC.RC01) end;
+into_all method label GBST code_regex \^PCI0\.LPCB\.EC\.ECAC replaceall_matched begin B1B2(^PCI0.LPCB.EC.AC00,^PCI0.LPCB.EC.AC01) end;
+into_all method label GBST code_regex \^PCI0\.LPCB\.EC\.ECVO replaceall_matched begin B1B2(^PCI0.LPCB.EC.VO00,^PCI0.LPCB.EC.VO01) end;
+
+into_all method label GBIF code_regex \^PCI0\.LPCB\.EC\.SBFC replaceall_matched begin B1B2(^PCI0.LPCB.EC.FC00,^PCI0.LPCB.EC.FC01) end;
+
+into_all method label GBIF code_regex \^PCI0\.LPCB\.EC\.SBDC replaceall_matched begin B1B2(^PCI0.LPCB.EC.DC00,^PCI0.LPCB.EC.DC01) end;
+into_all method label GBIF code_regex \^PCI0\.LPCB\.EC\.SBDV replaceall_matched begin B1B2(^PCI0.LPCB.EC.DV00,^PCI0.LPCB.EC.DV01) end;
+into_all method label GBIF code_regex \^PCI0\.LPCB\.EC\.SBSN replaceall_matched begin B1B2(^PCI0.LPCB.EC.SN00,^PCI0.LPCB.EC.SN01) end;
+
+into_all method label GBIF code_regex \^PCI0\.LPCB\.EC\.SBCH replaceall_matched begin B1B4(^PCI0.LPCB.EC.CH00,^PCI0.LPCB.EC.CH01,^PCI0.LPCB.EC.CH02,^PCI0.LPCB.EC.CH03) end;
+
+into method label GBIF code_regex \^PCI0\.LPCB\.EC\.SBMN replaceall_matched begin ^PCI0.LPCB.EC.RECB(0xA0,128) end;
+into method label GBIF code_regex \^PCI0\.LPCB\.EC\.SBDN replaceall_matched begin ^PCI0.LPCB.EC.RECB(0xA0,128) end;
