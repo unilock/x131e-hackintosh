@@ -5,4 +5,6 @@
 [FIXED by adding SSDT-GPRW.aml] - sleep is broken when using USBPorts.kext with Bluetooth mapped correctly
 
 - if typing too soon after wake, keyboard starts spamming input, causing a softlock
-- some Fn keys don't work; check out ThinkpadAssistant
+- some Fn keys don't work; check out ThinkpadAssistant (needs extra config.plist + SSDT patches)
+- SD card reader probably doesn't work; check this out: https://github.com/cholonam/Sinetek-rtsx
+- VGA probably doesn't work
