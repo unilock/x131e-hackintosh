@@ -4,7 +4,7 @@
 
 todo: add bios config
 
-assumes patched bios for advanced menu and whitelist removal
+assumes patched bios for advanced menu and whitelist removal, see here: https://github.com/digmorepaka/thinkpad-firmware-patches
 
 assumes fenvi bcm94360ng (in m.2 to minipcie adapter), add appropriate kexts if you have a different card
 
