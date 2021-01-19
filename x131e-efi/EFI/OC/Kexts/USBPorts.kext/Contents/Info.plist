@@ -82,42 +82,20 @@
 			<dict>
 				<key>port-count</key>
 				<data>
-				BAAAAA==
+				BQAAAA==
 				</data>
 				<key>ports</key>
 				<dict>
-					<key>HP11</key>
+					<key>HP15</key>
 					<dict>
 						<key>name</key>
-						<string>HP11</string>
+						<string>HP15</string>
 						<key>port</key>
 						<data>
-						AQAAAA==
+						BQAAAA==
 						</data>
 						<key>portType</key>
 						<integer>0</integer>
-					</dict>
-					<key>HP12</key>
-					<dict>
-						<key>name</key>
-						<string>HP12</string>
-						<key>port</key>
-						<data>
-						AgAAAA==
-						</data>
-						<key>portType</key>
-						<integer>0</integer>
-					</dict>
-					<key>HP14</key>
-					<dict>
-						<key>name</key>
-						<string>HP14</string>
-						<key>port</key>
-						<data>
-						BAAAAA==
-						</data>
-						<key>portType</key>
-						<integer>255</integer>
 					</dict>
 				</dict>
 			</dict>
@@ -238,6 +216,39 @@
 				</data>
 				<key>ports</key>
 				<dict>
+					<key>HS01</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>HS01</string>
+						<key>port</key>
+						<data>
+						AQAAAA==
+						</data>
+					</dict>
+					<key>HS02</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>HS02</string>
+						<key>port</key>
+						<data>
+						AgAAAA==
+						</data>
+					</dict>
+					<key>HS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>name</key>
+						<string>HS04</string>
+						<key>port</key>
+						<data>
+						BAAAAA==
+						</data>
+					</dict>
 					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>

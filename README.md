@@ -8,7 +8,7 @@ assumes patched bios for advanced menu and whitelist removal
 
 assumes fenvi bcm94360ng (in m.2 to minipcie adapter), add appropriate kexts if you have a different card
 
-provided efi has usbmap 3 (for sleep, no bluetooth)
+provided efi has usbmap 6 (sleep + bluetooth work)
 
 make sure you fill out /PlatformInfo/Generic/{MLB, ROM, SystemSerialNumber, SystemUUID}
 
