@@ -15,4 +15,4 @@ make sure you fill out /PlatformInfo/Generic/{MLB, ROM, SystemSerialNumber, Syst
 battery patches: https://www.reddit.com/r/hackintosh/comments/jwj0vx/thinkpad_x131e_battery_status_works_with_static/
 bluetooth woes: https://forum.thinkpads.com/viewtopic.php?t=131650
 
-last updated 2021-01-17
+last updated 2021-01-18
